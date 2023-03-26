@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		11D3F42429CFF92500F44F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D3F42229CFF92500F44F53 /* Main.storyboard */; };
 		11D3F42629CFF92700F44F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D3F42529CFF92700F44F53 /* Assets.xcassets */; };
 		11D3F42929CFF92700F44F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D3F42729CFF92700F44F53 /* LaunchScreen.storyboard */; };
+		34B0EBE333D3D4ECA2A67E9E /* Pods_AlamofireSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32AC5100B26DDD4DB7DEDEC /* Pods_AlamofireSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		11D3F42529CFF92700F44F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D3F42829CFF92700F44F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D3F42A29CFF92700F44F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766408FB28AEE1E35CFEE1BE /* Pods-AlamofireSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireSwift.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireSwift/Pods-AlamofireSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		F32AC5100B26DDD4DB7DEDEC /* Pods_AlamofireSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F467CD144DAD0DAB25A98025 /* Pods-AlamofireSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireSwift.release.xcconfig"; path = "Target Support Files/Pods-AlamofireSwift/Pods-AlamofireSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B0EBE333D3D4ECA2A67E9E /* Pods_AlamofireSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				11D3F41B29CFF92500F44F53 /* AlamofireSwift */,
 				11D3F41A29CFF92500F44F53 /* Products */,
+				EEEC86686F2B598BD73C65A9 /* Pods */,
+				78A7AB800A530A23824F0EB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = AlamofireSwift;
 			sourceTree = "<group>";
 		};
+		78A7AB800A530A23824F0EB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F32AC5100B26DDD4DB7DEDEC /* Pods_AlamofireSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEEC86686F2B598BD73C65A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				766408FB28AEE1E35CFEE1BE /* Pods-AlamofireSwift.debug.xcconfig */,
+				F467CD144DAD0DAB25A98025 /* Pods-AlamofireSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D3F42D29CFF92700F44F53 /* Build configuration list for PBXNativeTarget "AlamofireSwift" */;
 			buildPhases = (
+				ECD4A83C10E0007A41CD04A6 /* [CP] Check Pods Manifest.lock */,
 				11D3F41529CFF92500F44F53 /* Sources */,
 				11D3F41629CFF92500F44F53 /* Frameworks */,
 				11D3F41729CFF92500F44F53 /* Resources */,
+				987A6E09376F60C6FA3F0C8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 11D3F41429CFF92500F44F53 /* Build configuration list for PBXProject "AlamofireSwift" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		987A6E09376F60C6FA3F0C8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamofireSwift/Pods-AlamofireSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamofireSwift/Pods-AlamofireSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlamofireSwift/Pods-AlamofireSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD4A83C10E0007A41CD04A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlamofireSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11D3F41529CFF92500F44F53 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		11D3F42E29CFF92700F44F53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766408FB28AEE1E35CFEE1BE /* Pods-AlamofireSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +380,7 @@
 		};
 		11D3F42F29CFF92700F44F53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F467CD144DAD0DAB25A98025 /* Pods-AlamofireSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +393,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
